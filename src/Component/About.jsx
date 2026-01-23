@@ -61,7 +61,7 @@ const About = () => {
             {/* Developer Image */}
             <div className="about-image">
               <img
-                src="/public/paulo.jpeg" // ✅ Replace with your actual image path
+                src="/paulo.jpeg" // ✅ Replace with your actual image path
                 alt={`${developer.name} - Full Stack Developer`}
                 className="about-image__photo"
                 loading="lazy"
