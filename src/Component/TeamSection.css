@@ -1,0 +1,157 @@
+.team-section {
+  padding: 5rem 0;
+  background-color: #0f172a;
+  color: #f1f5f9;
+}
+
+/* Header */
+.team-header {
+  text-align: center;
+  margin-bottom: 3rem;
+  padding: 0 1.5rem;
+}
+
+.team-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0;
+  background: linear-gradient(90deg, #f1f5f9, #cbd5e1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Grid: FORCE 2 COLUMNS ON DESKTOP */
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* ✅ FORCE 2 COLUMNS */
+  gap: 2rem;
+}
+
+/* For screens wider than 768px, keep 2 columns */
+@media (min-width: 769px) {
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Mobile: Stack cards vertically */
+@media (max-width: 768px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .team-card__image-wrapper {
+    height: 250px;
+  }
+
+  .team-card__content {
+    padding: 1rem;
+  }
+
+  .team-card__name {
+    font-size: 1.375rem;
+  }
+
+  .team-card__role {
+    font-size: 1rem;
+  }
+
+  .team-card__bio {
+    font-size: 0.95rem;
+  }
+}
+
+/* Extra small screens */
+@media (max-width: 480px) {
+  .team-header {
+    padding: 0 1rem;
+  }
+
+  .team-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .team-card__image-wrapper {
+    height: 200px;
+  }
+}
+
+/* Card Styles */
+.team-card {
+  background: rgba(30, 41, 59, 0.7);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  backdrop-filter: blur(10px);
+  display: flex;
+  flex-direction: column;
+}
+
+.team-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(139, 92, 246, 0.2);
+  background: rgba(45, 55, 72, 0.8);
+}
+
+.team-card__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.team-card__image {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.team-card:hover .team-card__image {
+  transform: scale(1.05);
+}
+
+.team-card__content {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.team-card__name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: #f1f5f9;
+}
+
+.team-card__role {
+  font-size: 1.125rem;
+  color: #60a5fa;
+  margin: 0 0 0.5rem 0;
+  font-weight: 600;
+}
+
+.team-card__bio {
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin: 0;
+  flex-grow: 1;
+}

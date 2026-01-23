@@ -1,0 +1,130 @@
+/* KeepInTouch.css */
+
+.keep-in-touch-section {
+  padding: 5rem 0;
+  background-color: #f1f5f9;
+  color: #1e293b;
+  position: relative;
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+/* Characters */
+.character {
+  position: relative;
+  width: 160px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.character-left {
+  transform: scaleX(-1);
+}
+ /* Normal orientation */
+/* .character-right {
+ 
+} */
+
+/* Ground Line */
+.character::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #94a3b8;
+  border-radius: 1px;
+}
+
+.character::before {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 10%;
+  width: 20%;
+  height: 2px;
+  background: #94a3b8;
+  border-radius: 1px;
+}
+
+.character:nth-child(3)::before {
+  right: 10%;
+  left: auto;
+}
+
+/* Center Content */
+.content-center {
+  text-align: center;
+  flex: 1;
+  max-width: 600px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #1e293b;
+}
+
+.section-subtitle {
+  font-size: 1.125rem;
+  color: #334155;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.contact-button {
+  background: #d9f73c;
+  color: #1e293b;
+  border: none;
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(217, 247, 60, 0.3);
+}
+
+.contact-button:hover {
+  background: #c4e62b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(217, 247, 60, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
+  .character {
+    width: 120px;
+    height: 160px;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .section-subtitle {
+    font-size: 1rem;
+  }
+
+  .contact-button {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+  }
+}
