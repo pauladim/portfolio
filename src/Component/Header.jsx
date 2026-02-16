@@ -41,7 +41,7 @@ function Header() {
           onClick={handleNavClick}
         >
           <img 
-            src="/newlogo.png" 
+            src="/logonew.png" 
             alt="Paul Logo" 
             className="logo-img-bold" 
           />

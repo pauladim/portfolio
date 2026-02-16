@@ -22,7 +22,7 @@
 }
 
 .logo-img-bold {
-  height: 36px; /* Slightly smaller for mobile */
+  height: 76px !important; /* Slightly smaller for mobile */
   width: auto;
 }
 
