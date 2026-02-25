@@ -172,6 +172,12 @@ const TestimonialsSection = () => {
       role: 'Founder, Jaufoods',
       content: 'Paul transformed our vision into a stunning, functional website. Highly recommend his services!',
       avatar: '👩‍💼'
+    },
+     {
+      name: 'Julie',
+      role: 'Founder, Rejulzhomecare',
+      content: "Paul brought our homecare vision to life with a beautiful and user-friendly website. His attention to detail and professionalism exceeded our expectations.",
+      avatar: '👩‍💼'
     }
   ];
 
@@ -311,7 +317,7 @@ const Home = () => {
 
               <div className="circular-hero__stats">
                 <div className="circular-hero__stat">
-                  <div className="circular-hero__stat-value">2+</div>
+                  <div className="circular-hero__stat-value">3+</div>
                   <div className="circular-hero__stat-label">Projects</div>
                 </div>
                 <div className="circular-hero__stat">
@@ -319,7 +325,7 @@ const Home = () => {
                   <div className="circular-hero__stat-label">Years</div>
                 </div>
                 <div className="circular-hero__stat">
-                  <div className="circular-hero__stat-value">2+</div>
+                  <div className="circular-hero__stat-value">3+</div>
                   <div className="circular-hero__stat-label">Clients</div>
                 </div>
               </div>
