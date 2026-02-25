@@ -20,6 +20,13 @@ const Projects = () => {
       technologies: ["React", "Material UI"],
       image: "/jaufooods.png",
       link: "https://www.jaufoods.com.ng"
+    },
+      {
+      title: "Homecare Website",
+     description: "A modern homecare website designed to present caregiving services, support solutions, and seamless client inquiries.",
+      technologies: ["React", "Material UI"],
+      image: "/rejulz.jpeg",
+      link: "https://www.rejulzhomecare.com"
     }
   ];
 
