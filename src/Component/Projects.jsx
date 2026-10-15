@@ -10,8 +10,8 @@ const Projects = () => {
     {
       title: "N.G.O Website",
       description: "Empowering individuals to overcome adversity",
-      technologies: ["React"],
-      image: "/wearenotthugsoff.png",
+      technologies: ["React", "Tailwind CSS"],
+      image: "/newthugs.png",
       link: "https://wearenotthugs.com"
     },
     {
